@@ -1,0 +1,8 @@
+a#navbar-logo {
+    background-image: url('/assets/luna-logo-white.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    opacity: 0.75;
+    margin-top: -15px;
+}
