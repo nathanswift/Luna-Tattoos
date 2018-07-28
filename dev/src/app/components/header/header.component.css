@@ -1,8 +1,12 @@
-span#footer {
+span#footer{
     color: #ccc;
     opacity: 0.75;
     margin-top: 20px;
     font-size: 0.85em;
     font-weight: 100;
     display: block;
+}
+
+div > div > img{
+    height: 400px;
 }
