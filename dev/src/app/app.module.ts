@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -13,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BookComponent } from './pages/book/book.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { HomeComponent } from './pages/home/home.component';
+import { InstagramFeedComponent } from './components/instagram-feed/instagram-feed.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -33,11 +35,13 @@ const appRoutes: Routes = [
     FooterComponent,
     BookComponent,
     PortfolioComponent,
-    HomeComponent
+    HomeComponent,
+    InstagramFeedComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

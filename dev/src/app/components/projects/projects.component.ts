@@ -14,7 +14,8 @@ export class ProjectsComponent implements OnInit {
     setInterval(() => {
       this.currentImage++;
       if (this.currentImage === this.images.length) this.currentImage = 0;
-      document.getElementById('portfolio-image').setAttribute('src', this.images[this.currentImage]);
+      const elem = document.getElementById('portfolio-image');
+      if (elem) elem.setAttribute('src', this.images[this.currentImage]);
     }, 2000);
   }
 
