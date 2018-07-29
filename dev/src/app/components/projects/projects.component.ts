@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  images = ['assets/bones.jpg', 'assets/frieda.jpg', 'assets/peace.jpg', 'assets/feedingdeers.jpg', 'assets/dino.jpg'];
+  currentImage = 0;
+
+  constructor() {
+    setInterval(() => {
+      this.currentImage++;
+      if (this.currentImage === this.images.length) this.currentImage = 0;
+      document.getElementById('portfolio-image').setAttribute('src', this.images[this.currentImage]);
+    }, 2000);
+  }
 
   ngOnInit() {
   }
