@@ -7,6 +7,6 @@ span#footer{
     display: block;
 }
 
-div > div > img{
-    height: 400px;
+div > div > img {
+    width: 100%;
 }
