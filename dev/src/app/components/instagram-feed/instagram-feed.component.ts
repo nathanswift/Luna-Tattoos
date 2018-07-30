@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { instagram } from '../../../environments/instagram';
 
 @Component({
   selector: 'app-instagram-feed',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstagramFeedComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    console.log(instagram);
+  }
 
   ngOnInit() {
   }
