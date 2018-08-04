@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { instagram } from '../../../environments/instagram';
+import * as Instafeed from 'instafeed';
 
 @Component({
   selector: 'app-instagram-feed',
@@ -9,7 +9,20 @@ import { instagram } from '../../../environments/instagram';
 export class InstagramFeedComponent implements OnInit {
 
   constructor() {
-    console.log(instagram);
+    new Instafeed({
+      accessToken: '50928748.1677ed0.6b1d998d3fef463988c8af20c40c93bb',
+      onSuccess: (msg) => {
+        var elems = document.querySelectorAll('div#instafeed img');
+        for (var x = 0; x < elems.length; x++) {
+          var elem: any = elems[x];
+          elem.style.width = '100%';
+          elem.style.height = 'auto';
+        }
+      },
+      onError: (msg) => {
+        console.log(msg);
+      }
+    }).run();
   }
 
   ngOnInit() {
