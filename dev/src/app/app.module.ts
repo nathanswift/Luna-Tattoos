@@ -17,6 +17,7 @@ import { InstagramFeedComponent } from './components/instagram-feed/instagram-fe
 import { SliderComponent } from './components/slider/slider.component';
 
 const appRoutes: Routes = [
+  { path: 'contact', component: ContactComponent },
   { path: 'home', component: HomeComponent },
   { path: 'book', component: BookComponent },
   { path: 'portfolio', component: PortfolioComponent },
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
     PortfolioComponent,
     HomeComponent,
     InstagramFeedComponent,
-    SliderComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
