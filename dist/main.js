@@ -420,7 +420,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "a#navbar-logo {\n    background-image: url('/assets/luna-logo-white.png');\n    background-size: cover;\n    height: 50px;\n    width: 50px;\n    opacity: 0.75;\n    margin-top: -15px;\n}\n"
+module.exports = "a#navbar-logo {\n    background-image: url('https://nathanswift.github.io/Luna-Tattoos/dist/assets/luna-logo-white.png');\n    background-size: cover;\n    height: 50px;\n    width: 50px;\n    opacity: 0.75;\n    margin-top: -15px;\n}\n"
 
 /***/ }),
 

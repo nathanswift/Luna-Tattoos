@@ -30,13 +30,13 @@
   var navbarCollapse = function() {
     if ($("#mainNav").length > 0 && $("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
-      $("a#navbar-logo").css("background-image", "url('/assets/luna-logo-black.png')");  
+      $("a#navbar-logo").css("background-image", "url('https://nathanswift.github.io/Luna-Tattoos/dist/assets/luna-logo-black.png')");  
       $("a#navbar-logo").css("margin-top", "0px");  
     } else {
       $("#mainNav").removeClass("navbar-shrink");
-      $("a#navbar-logo").css("background-image", "url('/assets/luna-logo-white.png')");  
-      $("a#navbar-logo").css("margin-top", "-15px");  
-    }
+      $("a#navbar-logo").css("background-image", "url('https://nathanswift.github.io/Luna-Tattoos/dist/assets/luna-logo-white.png')");  
+      $("a#navbar-logo").css("margin-top", "-15px");
+      }
   };
   // Collapse now if page is not at top
   navbarCollapse();
