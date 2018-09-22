@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { link } from 'fs';
+import { HomeComponent } from '../../pages/home/home.component';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
   }
-
+  ngOnInit() {
+    const links = document.getElementsByClassName('page-nav');
+    for (let x = 0; x < links.length; x++) {
+      const link = links[x];
+      link.addEventListener('click', function () {
+        const id = this.getAttribute('data-section'),
+          elem = document.getElementById(id);
+        window.scrollTo(0, elem.offsetTop);
+      });
+    }
+  }
 }
