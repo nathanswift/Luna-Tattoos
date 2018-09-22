@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { link } from 'fs';
-import { HomeComponent } from '../../pages/home/home.component';
 
 @Component({
   selector: 'app-navbar',
